@@ -78,7 +78,7 @@ body {
   background-color: #000000;
   width: 49vmax;
   height: 39.4vmin;
-  margin: 0 10vw;
+  margin: 0 auto;
 }
 .sos-countdown-timer {
   margin: 3.1vh 0;
@@ -93,6 +93,11 @@ body {
   border-radius: 5px;
   padding: 10px 30px;
   margin: 0px 10px;
+}
+@media only screen and (max-width: 320px) {
+  .link-button {
+    margin: 0px 5px;
+  }
 }
 .link-button:hover,
 .link-button:focus {
@@ -221,7 +226,7 @@ footer > * {
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   body {
     font-family: "CircularStd";
-    background: url("../img/bg-mobile.png") no-repeat fixed;
+    background: url("../img/bg-mobile.png") no-repeat center center fixed;
     background-size: cover;
     min-width: 300px;
   }
