@@ -94,6 +94,11 @@ body {
   padding: 10px 30px;
   margin: 0px 10px;
 }
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
 .sos-info-button {
   border: 1px solid black;
   color: #000000;
