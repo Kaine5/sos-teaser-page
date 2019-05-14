@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/App.css";
 import logo from "../img/sos-logo.png";
+import Countdown from "./Countdown";
 import { ReactComponent as Facebook } from "../img/Facebook.svg";
 import { ReactComponent as Instagram } from "../img/Instagram.svg";
 import { ReactComponent as Twitter } from "../img/Twitter.svg";
@@ -27,7 +28,9 @@ class App extends React.Component {
           <div className="sos-teaser-video">
             <div className="sos-vid">Video</div>
           </div>
-          <div className="sos-countdown-timer">COMING SOON</div>
+          <div className="sos-countdown-timer">
+            <Countdown />
+          </div>
           <div className="mid-size-text">
             Be the first to know about the launch
           </div>

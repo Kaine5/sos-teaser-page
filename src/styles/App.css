@@ -1,6 +1,6 @@
 body {
   font-family: "CircularStd";
-  background: url("../img/bg.png") no-repeat fixed;
+  background: url("../img/bg.png") no-repeat center center fixed;
   background-size: cover;
 }
 @font-face {
@@ -142,6 +142,16 @@ footer > * {
   border-radius: 5px;
   height: 346px;
   width: 300px;
+  animation-name: animatetop;
+  animation-duration: 1s;
+}
+@keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .modal-icon {
   margin: 40px auto;
@@ -223,4 +233,24 @@ footer > * {
   footer > * {
     margin: 0.45vh 0;
   }
+}
+
+.countdown {
+  margin: auto;
+}
+.count-box {
+  display: inline-block;
+  margin: 0 12px;
+}
+.count-box-value {
+  font-size: 50px;
+  color: #bbbbbb;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+.count-box-title {
+  font-size: 15px;
+  color: #bbbbbb;
+  letter-spacing: -0.36px;
+  text-align: center;
 }
