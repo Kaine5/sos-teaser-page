@@ -1,5 +1,7 @@
 body {
   font-family: "CircularStd";
+  background-image: url("../img/bg.png");
+  background-size: cover;
 }
 @font-face {
   font-family: "CircularStd";
@@ -59,9 +61,14 @@ body {
 .App {
   text-align: center;
 }
+.sos-logo {
+  margin: 5.4vh 0;
+}
 .sos-logo > img {
   width: 15%;
   height: 15%;
+  min-width: 139px;
+  min-height: 62px;
 }
 .sos-teaser-video {
   display: flex;
@@ -69,14 +76,15 @@ body {
 }
 .sos-vid {
   background-color: #000000;
-  width: 40vmax;
-  height: 30vmin;
+  width: 49vmax;
+  height: 39.4vmin;
+  margin: 0 10vw;
 }
 .sos-countdown-timer {
-  margin-top: 1.6vh;
+  margin: 3.1vh 0;
 }
 .sos-buttons-section {
-  margin-top: 2.7vh;
+  margin-top: 2.9vh;
 }
 .link-button {
   width: 140px;
@@ -86,7 +94,7 @@ body {
   margin: 0px 10px;
 }
 .sos-info-button {
-  background-color: #d8d8d8;
+  border: 1px solid black;
   color: #000000;
   font-weight: bold;
   font-size: 15px;
@@ -101,4 +109,27 @@ body {
 }
 .mid-size-text {
   font-size: 20px;
+}
+footer {
+  margin-top: 7.5vh;
+}
+footer > * {
+  margin: 0 2.1vw;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  body {
+    font-family: "CircularStd";
+    background-image: url("../img/bg-mobile.png");
+    background-size: cover;
+    min-width: 300px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer > * {
+    margin: 0.45vh 0;
+  }
 }

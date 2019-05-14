@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="127px" height="23px" viewBox="0 0 127 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-650.000000, -955.000000)" fill="#00A99D">
+            <g id="Facebook" transform="translate(650.000000, 955.000000)">
+                <path d="M11.3519164,12.4945948 L11.8954704,8.33403827 L7.81881533,8.33403827 L7.81881533,5.83770435 C7.81881533,4.65194575 8.1533101,3.75742609 9.90940767,3.75742609 L12,3.75742609 L12,0.179347487 C10.9590787,0.0604558637 9.91183645,0.0048784999 8.8641115,0.0129252266 C7.39970465,-0.0925056706 5.96326524,0.451031795 4.93927244,1.49805371 C3.91527964,2.54507562 3.40829072,3.98867326 3.55400697,5.44245149 L3.55400697,8.45885496 L0,8.45885496 L0,12.4945948 L3.55400697,12.4945948 L3.55400697,23 L7.73519164,23 L7.73519164,12.4945948 L11.3519164,12.4945948 Z" id="Path" fill-rule="nonzero"></path>
+                <text id="@theshortcut" font-family="CircularStd-Medium, CircularStd" font-size="18" font-weight="400">
+                    <tspan x="17" y="18">@theshortcut</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
