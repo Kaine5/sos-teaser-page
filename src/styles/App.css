@@ -1,6 +1,6 @@
 body {
   font-family: "CircularStd";
-  background-image: url("../img/bg.png");
+  background: url("../img/bg.png") no-repeat fixed;
   background-size: cover;
 }
 @font-face {
@@ -82,6 +82,7 @@ body {
 }
 .sos-countdown-timer {
   margin: 3.1vh 0;
+  font-size: 32px;
 }
 .sos-buttons-section {
   margin-top: 2.9vh;
@@ -116,11 +117,96 @@ footer {
 footer > * {
   margin: 0 2.1vw;
 }
+.newsletter-modal {
+  display: flex;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+  justify-content: center;
+}
+.newsletter-modal-content {
+  background: #ffffff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 27.5vh;
+  border-radius: 5px;
+  height: 346px;
+  width: 300px;
+}
+.modal-icon {
+  margin: 40px auto;
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  background: #d8d8d8;
+  border: 1px solid #979797;
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.74px;
+  text-align: center;
+}
+.modal-subtitle {
+  margin: 17px 0;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: -0.52px;
+  text-align: center;
+}
+.modal-input {
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  font-size: 13px;
+  font-style: italic;
+  color: #696969;
+  letter-spacing: -0.55px;
+  text-align: center;
+  width: 244px;
+  height: 31px;
+  text-align: left;
+  padding-left: 8px;
+}
+.modal-button {
+  margin: 17px auto;
+  display: block;
+  background: #000000;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: -0.91px;
+  text-align: center;
+  height: 34px;
+  width: 97px;
+}
+.close {
+  color: #d8d8d8;
+  float: right;
+  font-size: 47px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   body {
     font-family: "CircularStd";
-    background-image: url("../img/bg-mobile.png");
+    background: url("../img/bg-mobile.png") no-repeat fixed;
     background-size: cover;
     min-width: 300px;
   }
