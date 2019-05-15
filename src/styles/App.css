@@ -77,7 +77,7 @@ body {
 .sos-vid {
   background-color: #000000;
   width: 49vmax;
-  height: 39.4vmin;
+  height: 21.03vmax;
   margin: 0 auto;
 }
 .sos-countdown-timer {
@@ -108,6 +108,8 @@ body {
   border: 1px solid black;
   color: #000000;
   font-weight: bold;
+  text-decoration: none;
+  background-color: white;
   font-size: 15px;
   text-align: center;
 }
@@ -148,7 +150,7 @@ footer > * {
   height: 346px;
   width: 300px;
   animation-name: animatetop;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
 }
 @keyframes animatetop {
   from {
@@ -237,6 +239,11 @@ footer > * {
   }
   footer > * {
     margin: 0.45vh 0;
+  }
+  .sos-vid {
+    margin: 0;
+    width: 100vw;
+    height: 42.91vw;
   }
 }
 

@@ -26,7 +26,10 @@ class App extends React.Component {
             <img src={logo} alt="sos logo" />
           </div>
           <div className="sos-teaser-video">
-            <div className="sos-vid">Video</div>
+            <video className="sos-vid" autoPlay muted="muted">
+              <source src="/teasermixed.mov" type="video/mp4" />
+              Your browser does not support the video tag
+            </video>
           </div>
           <div className="sos-countdown-timer">
             <Countdown />
@@ -35,15 +38,26 @@ class App extends React.Component {
             Be the first to know about the launch
           </div>
           <div className="sos-buttons-section">
-            <a className="sos-info-button link-button">MORE INFO</a>
+            <a
+              className="sos-info-button link-button"
+              href="https://theshortcut.org/our-activities-2/school-of-startups-2019/"
+            >
+              MORE INFO
+            </a>
             <a className="sos-noti-button link-button" onClick={this.openModal}>
               GET NOTIFIED
             </a>
           </div>
           <footer>
-            <Facebook />
-            <Instagram />
-            <Twitter />
+            <a href="https://www.facebook.com/theshortcut/">
+              <Facebook />
+            </a>
+            <a href="https://www.instagram.com/theshortcutorg/">
+              <Instagram />
+            </a>
+            <a href="https://twitter.com/theshortcutorg">
+              <Twitter />
+            </a>
           </footer>
         </div>
         {this.state.modalDisplay && (
