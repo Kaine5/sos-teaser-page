@@ -164,9 +164,6 @@ footer > * {
   margin: 40px auto;
   height: 78px;
   width: 78px;
-  border-radius: 50%;
-  background: #d8d8d8;
-  border: 1px solid #979797;
 }
 .modal-title {
   font-size: 20px;
@@ -198,7 +195,7 @@ footer > * {
 .modal-button {
   margin: 17px auto;
   display: block;
-  background: #000000;
+  background: #e8592e;
   border: 1px solid #979797;
   border-radius: 5px;
   font-weight: bold;

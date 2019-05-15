@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/App.css";
 import logo from "../img/sos-logo.png";
+import { ReactComponent as SubLogo } from "../img/sos-sub-logo.svg";
 import Countdown from "./Countdown";
 import { ReactComponent as Facebook } from "../img/Facebook.svg";
 import { ReactComponent as Instagram } from "../img/Instagram.svg";
@@ -26,10 +27,14 @@ class App extends React.Component {
             <img src={logo} alt="sos logo" />
           </div>
           <div className="sos-teaser-video">
-            <video className="sos-vid" autoPlay muted="muted">
-              <source src="/teasermixed.mov" type="video/mp4" />
-              Your browser does not support the video tag
-            </video>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed?playlist=2JCf_fXvWHc&amp;autoplay=1&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
           </div>
           <div className="sos-countdown-timer">
             <Countdown />
@@ -66,7 +71,9 @@ class App extends React.Component {
               <span className="close" onClick={this.closeModal}>
                 &times;
               </span>
-              <div className="modal-icon" />
+              <div className="modal-icon">
+                <SubLogo />
+              </div>
               <div className="modal-title">SUBSCRIBE</div>
               <div className="modal-subtitle">
                 Enter your email address to get notified
