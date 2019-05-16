@@ -27,14 +27,9 @@ class App extends React.Component {
             <img src={logo} alt="sos logo" />
           </div>
           <div className="sos-teaser-video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed?playlist=2JCf_fXvWHc&amp;autoplay=1&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
+            <video className="sos-vid" autoPlay loop muted>
+              <source src="/video.mp4" type="video/mp4" />
+            </video>
           </div>
           <div className="sos-countdown-timer">
             <Countdown />
