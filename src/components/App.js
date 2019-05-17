@@ -27,9 +27,11 @@ class App extends React.Component {
             <img src={logo} alt="sos logo" />
           </div>
           <div className="sos-teaser-video">
-            <video className="sos-vid" autoPlay loop muted>
-              <source src="/video.mp4" type="video/mp4" />
-            </video>
+            <div className="sos-vid-wrapper">
+              <video className="sos-vid" autoPlay loop muted>
+                <source src="video.webm" type="video/webm" />
+              </video>
+            </div>
           </div>
           <div className="sos-countdown-timer">
             <Countdown />

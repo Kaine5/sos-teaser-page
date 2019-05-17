@@ -74,11 +74,16 @@ body {
   display: flex;
   justify-content: center;
 }
-.sos-vid {
-  background-color: #000000;
-  width: 49vmax;
+.sos-vid-wrapper {
+  overflow: hidden;
+  width: 48vmax;
   height: 21.03vmax;
   margin: 0 auto;
+}
+.sos-vid {
+  width: 50vmax;
+  height: 21.03vmax;
+  margin-left: -1vmax;
 }
 .sos-countdown-timer {
   margin: 3.1vh 0;
