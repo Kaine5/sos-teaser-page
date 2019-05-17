@@ -1,23 +1,43 @@
 import React from "react";
 import "../styles/App.css";
 import logo from "../img/sos-logo.png";
+import axios from "axios";
 import { ReactComponent as SubLogo } from "../img/sos-sub-logo.svg";
 import Countdown from "./Countdown";
 import { ReactComponent as Facebook } from "../img/Facebook.svg";
 import { ReactComponent as Instagram } from "../img/Instagram.svg";
 import { ReactComponent as Twitter } from "../img/Twitter.svg";
+const axiosConfig = {
+  headers: {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Access-Control-Allow-Origin": "*"
+  }
+};
 class App extends React.Component {
-  state = { modalDisplay: false };
+  state = { modalDisplay: false, email: "", msg: "" };
   openModal = () => {
     this.setState({ modalDisplay: true });
   };
   closeModal = () => {
-    this.setState({ modalDisplay: false });
+    this.setState({ modalDisplay: false, msg: "" });
   };
   outsideModalClick = e => {
     if (e.target.className === "newsletter-modal") {
-      this.setState({ modalDisplay: false });
+      this.closeModal();
     }
+  };
+  handleSubmit = e => {
+    e.preventDefault();
+    axios
+      .post(
+        "https://cors-anywhere.herokuapp.com/https://theshortcut.us12.list-manage.com/subscribe/post-json?u=4dd5200f27d975e60d3f59cd1&id=e34bc78430&EMAIL=" +
+          this.state.email,
+        {},
+        axiosConfig
+      )
+      .then(res => {
+        this.setState({ email: "", msg: res.data.msg });
+      });
   };
   render() {
     return (
@@ -71,16 +91,39 @@ class App extends React.Component {
               <div className="modal-icon">
                 <SubLogo />
               </div>
-              <div className="modal-title">SUBSCRIBE</div>
-              <div className="modal-subtitle">
-                Enter your email address to get notified
+              <div id="mc_embed_signup">
+                <form onSubmit={this.handleSubmit}>
+                  <div id="mc_embed_signup_scroll">
+                    <div className="modal-title">Subscribe</div>
+                    <div className="modal-subtitle">
+                      {this.state.msg === ""
+                        ? "Enter your email to get notified"
+                        : this.state.msg}
+                    </div>
+                    <div className="mc-field-group">
+                      <input
+                        type="email"
+                        value={this.state.email}
+                        onChange={e => {
+                          this.setState({ email: e.target.value });
+                        }}
+                        name="MERGE0"
+                        className="required email modal-input"
+                        placeholder="Write your email address here"
+                      />
+                    </div>
+                    <div className="clear">
+                      <input
+                        type="submit"
+                        value="Subscribe"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        className="button modal-button"
+                      />
+                    </div>
+                  </div>
+                </form>
               </div>
-              <input
-                className="modal-input"
-                type="text"
-                placeholder="Write your email address here"
-              />
-              <button className="modal-button">Submit</button>
             </div>
           </div>
         )}
