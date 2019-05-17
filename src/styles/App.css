@@ -75,6 +75,8 @@ body {
   justify-content: center;
 }
 .sos-vid-wrapper {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   width: 48vmax;
   height: 21.03vmax;
@@ -83,7 +85,6 @@ body {
 .sos-vid {
   width: 50vmax;
   height: 21.03vmax;
-  margin-left: -1vmax;
 }
 .sos-countdown-timer {
   margin: 3.1vh 0;
