@@ -57,7 +57,6 @@ body {
   font-weight: 600;
   font-style: italic;
 }
-
 .App {
   text-align: center;
 }
@@ -125,6 +124,7 @@ body {
   font-weight: bold;
   font-size: 15px;
   text-align: center;
+  text-decoration: none;
 }
 .mid-size-text {
   font-size: 20px;
@@ -211,6 +211,7 @@ footer > * {
   text-align: center;
   height: 34px;
   width: 97px;
+  cursor: pointer;
 }
 .close {
   color: #d8d8d8;
